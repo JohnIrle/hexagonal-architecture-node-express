@@ -11,6 +11,14 @@ export default tseslint.config(
                 project: "tsconfig.eslint.json",
                 tsconfigRootDir: import.meta.dirname,
             }
+        },
+        rules: {
+            '@typescript-eslint/no-misused-promises': [
+                'error',
+                {
+                    'checksVoidReturn': false
+                }
+            ]
         }
     }
 )

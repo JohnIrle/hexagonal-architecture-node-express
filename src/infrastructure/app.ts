@@ -8,5 +8,4 @@ const logger = morgan("tiny");
 app.use(logger);
 app.use("/rescueFleets", RescueFleetRouter);
 
-
-export {app}
+export { app };

@@ -1,0 +1,13 @@
+###
+# @name Assemble a Fleet
+POST localhost:3000/rescueFleets
+Content-Type: application/json
+
+{
+  "numberOfPassengers": 800
+}
+
+###
+# @name Assemble a single ship in fleet
+GET localhost:3000/rescueFleets/c554a773-9b14-4100-97f3-d11265bd5792
+Content-Type: application/json

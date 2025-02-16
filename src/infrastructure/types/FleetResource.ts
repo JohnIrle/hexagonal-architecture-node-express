@@ -1,10 +1,9 @@
-import { StarShip } from "../../domain/StarShip";
 import { Fleet } from "../../domain/Fleet";
-import { NewStarShipResource } from "./StarShipResource";
+import { NewStarShipResource, StarShipResource } from "./StarShipResource";
 
 export type FleetResource = {
   id: string;
-  starships: StarShip[];
+  starships: StarShipResource[];
 };
 
 export function NewFleetResource(fleet: Fleet) {

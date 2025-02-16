@@ -19,7 +19,7 @@ async function assembleAFleet(req: RescueFleetRequestBody, res: Response) {
   const fleet = await assembleAFleet.forPassengers(req.body.numberOfPassengers);
   const fleetResource = NewFleetResource(fleet);
 
-  res.send(fleetResource);
+  res.json(fleetResource);
 }
 
 function getFleetById(req: Request, res: Response) {
